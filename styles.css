@@ -1,0 +1,20 @@
+div, a {
+  border: 1px solid red; }
+
+.landing-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.main-parallax {
+  width: 100%;
+  text-align: center; }
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
