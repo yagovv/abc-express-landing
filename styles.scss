@@ -1,19 +1,82 @@
-div, a{
-    border: 1px solid red;
+@import url("https://fonts.googleapis.com/css?family=Arimo|Oleo+Script|Questrial");
+
+$parallax: #23355a;
+$blue: #233459;
+$grey: #ededed;
+$orange: #fd7227;
+$header: "Arimo", sans-serif;
+$accent: "Oleo Script", cursive;
+$normal: "Questrial", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  color: white;
+  p,
+  h3 {
+    font-family: $normal;
+    font-size: 1.3em;
+  }
+  h1 {
+    font-family: $header;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+    font-family: $accent;
+  }
 }
 .landing-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: $blue;
 }
 .main-parallax {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  height: 20vh;
+  background-color: rgba($parallax, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  h1 {
+    font-family: $accent;
+  }
+}
+.secondary {
+  text-align: left;
 }
 .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+  background-color: $blue;
+}
+.accent {
+  font-family: $accent;
+}
+
+.main-btn {
+  margin-top: 50px;
+  padding: 10px;
+  background-color: $orange;
+  border-radius: 100px;
+  color: white;
+}
+
+.left {
+  justify-self: start;
+}
+.right {
+  justify-self: end;
 }
