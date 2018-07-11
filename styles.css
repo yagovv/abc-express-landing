@@ -25,7 +25,21 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-color: #233459; }
+  background-image: url("images/980x.jpg");
+  background-size: cover; }
+
+.overlay {
+  background-color: rgba(35, 52, 89, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.logo {
+  z-index: 2;
+  text-align: center; }
 
 .main-parallax {
   width: 100%;
@@ -40,6 +54,12 @@ body {
 
 .secondary {
   text-align: left; }
+
+.col {
+  margin: 20px; }
+  .col img {
+    margin-bottom: 10px;
+    border-radius: 15px; }
 
 .row {
   display: flex;
